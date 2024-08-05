@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Pekerjaan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[#F2F7FD]">
+    <nav
+      class="sticky top-0 z-[2] flex items-center px-5 justify-between h-[90px] rounded-bl-2xl rounded-br-2xl bg-white"
+    >
+      <h1 class="text-2xl font-bold tracking-wider">JOB SEEKER</h1>
+
+      <div class="items-center gap-7 hidden lg:flex">
+        <a
+          href=""
+          class="font-[500] tracking-wider whitespace-nowrap border-b-2 border-[#2D9CDB]"
+          >Home</a
+        >
+        <a
+          href=""
+          class="font-[500] hover:border-b border-[#2D9CDB] tracking-wider whitespace-nowrap"
+          >Company Profile</a
+        >
+        <a
+          href=""
+          class="font-[500] hover:border-b border-[#2D9CDB] tracking-wider whitespace-nowrap"
+          >Search Job</a
+        >
+        <a
+          href=""
+          class="font-[500] hover:border-b border-[#2D9CDB] tracking-wider whitespace-nowrap"
+          >My Profile</a
+        >
+      </div>
+
+      <div class="items-center hidden lg:flex">
+        <i
+          class="fa-solid fa-message text-xl text-black px-2 cursor-pointer border-r border-black"
+        ></i>
+
+        <i
+          class="fa-solid fa-bell text-xl px-2 cursor-pointer border-r border-black text-black"
+        ></i>
+
+        <div
+          class="flex items-center ml-4 cursor-pointer pr-2 border-r border-black"
+        >
+          <div class="w-[35px] h-[35px] rounded-[100%] overflow-hidden">
+            <img
+              src="./images/chuuni cover.jpg"
+              class="w-full h-full object-cover"
+              alt="profile"
+            />
+          </div>
+          <p class="font-[600] ml-2 w-[150px] truncate">
+            Muhammad Habib Abdillah
+          </p>
+        </div>
+
+        <button
+          class="bg-[#2D9CDB] text-white ml-4 px-4 py-2 rounded-2xl tracking-wider hover:bg-black transition"
+        >
+          Sebagai Perusahaan
+        </button>
+      </div>
+
+      <!-- RESPONSIVE -->
+      <label
+        for="menuToggle"
+        class="w-[50px] h-[50px] flex flex-col justify-evenly items-start lg:hidden"
+      >
+        <input type="checkbox" id="menuToggle" class="peer hidden" />
+        <div
+          class="bg-black h-[3px] rounded-xl w-full transition transform peer-checked:translate-y-[6px] peer-checked:rotate-[50deg]"
+        ></div>
+        <div
+          class="bg-black h-[3px] rounded-xl w-[80%] peer-checked:hidden transition"
+        ></div>
+        <div
+          class="bg-black h-[3px] rounded-xl w-[50%] peer-checked:w-full transition transfrom peer-checked:translate-y-[-12px] peer-checked:rotate-[-50deg]"
+        ></div>
+
+        <!-- DROP DOWN -->
+        <div
+          class="absolute left-0 h-0 overflow-hidden top-[90px] flex peer-checked:py-5 peer-checked:h-[200px] transition-all gap-3 justify-center bg-white peer-checked:border-t-2 items-center flex-col w-full z-10"
+        >
+          <a
+            href=""
+            class="text-xl font-[600] tracking-wide pb-1 border-[#2D9CDB] border-b-2"
+            >Home</a
+          >
+          <a href="" class="text-xl font-[600] tracking-wide pb-1"
+            >Company Profile</a
+          >
+          <a href="" class="text-xl font-[600] tracking-wide pb-1"
+            >Search Job</a
+          >
+          <a href="" class="text-xl font-[600] tracking-wide pb-1"
+            >My Profile</a
+          >
+        </div>
+      </label>
+      <!-- RESPONSIVE -->
+    </nav>
+
+    <header class="bg-[#E2ECFE] py-5 flex justify-center items-center">
+      <div class="w-[85%] h-full flex items-center">
+        <img
+          src="./images/google.png"
+          width="100"
+          class="mr-5"
+          alt="companyLogo"
+        />
+        <div>
+          <h1 class="text-2xl tracking-wider text-[#114FA9]">
+            Google Back End Developer
+          </h1>
+          <div class="mt-1 text-[gray] opacity-[70%] flex items-center gap-1">
+            <i class="fa-solid fa-bullseye"></i>
+            <p class="tracking-wider">Vitka, Pombensin Tiban</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="flex items-center justify-center gap-5 mt-[50px] flex-wrap-reverse px-3 my-10"
+    >
+      <div
+        class="bg-white flex justify-center rounded-2xl flex-[500px] items-center p-4"
+      >
+        <div class="bg-[#E2ECFE] p-6 rounded-2xl w-full">
+          <h2 class="text-2xl font-bold tracking-wide block mb-2">
+            Job Description :
+          </h2>
+          <p class="text-[gray] font-bold tracking-wide">
+            - Melakukan kunjungan ke project-project potensial <br />
+            - Menjalin relasi dengan proyek security system & kontraktor /
+            arsitek <br />
+            - Mencari project baru <br />
+            - Memaintain customer (kontraktor, pelaksana proyek dan procurement)
+            <br />
+            - Memonitor competitor product, harga, strategi dan service <br />
+            - Pencapaian target setiap bulan
+          </p>
+
+          <h2 class="text-2xl font-bold tracking-wide block mb-2 mt-8">
+            Job Requirements :
+          </h2>
+          <p class="text-[gray] font-bold tracking-wide">
+            - Melakukan kunjungan ke project-project potensial <br />
+            - Menjalin relasi dengan proyek security system & kontraktor /
+            arsitek <br />
+            - Mencari project baru <br />
+            - Memaintain customer (kontraktor, pelaksana proyek dan procurement)
+            <br />
+            - Memonitor competitor product, harga, strategi dan service <br />
+            - Pencapaian target setiap bulan
+          </p>
+        </div>
+      </div>
+
+      <div class="w-[350px] mb-5 bg-white p-3 rounded-3xl">
+        <div class="bg-[#E2ECFE] rounded-3xl p-3">
+          <div class="flex items-center mb-3">
+            <div class="w-[60px] h-[60px]">
+              <img
+                src="./images/google.png"
+                class="w-full h-full object-cover"
+                alt="comapnyProfile"
+              />
+            </div>
+            <div class="ml-2">
+              <p class="text-lg text-[#114FA9] tracking-wider">Google</p>
+              <p class="font-bold mt-[-5px]">Senior Back End Developer</p>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <div>
+              <p class="text-[gray] font-bold text-sm">Nama Perusahaan :</p>
+              <p class="font-bold text-sm w-[150px]">Google Cabang Tiban</p>
+            </div>
+
+            <div>
+              <p class="text-[gray] font-bold text-sm">Level Tingkatan :</p>
+              <p class="font-bold text-sm w-[120px]">Sepuh</p>
+            </div>
+          </div>
+
+          <div class="flex justify-between mt-5 mb-4">
+            <div>
+              <p class="text-[gray] font-bold text-sm">Total Gaji :</p>
+              <p class="font-bold text-sm w-[150px]">Rp. 5JT / Hari</p>
+            </div>
+
+            <div>
+              <p class="text-[gray] font-bold text-sm">Bisnis Utama :</p>
+              <p class="font-bold text-sm w-[120px]">Bergerak Di Bidang IT</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center mb-3">
+          <button
+            class="hover:bg-[#4567D6] border-2 hover:text-white transition mt-4 border-[#4567D6] px-3 py-1 font-bold tracking-wider rounded-2xl"
+          >
+            Lamar Di Lowongan Ini
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
