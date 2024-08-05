@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="border flex justify-end h-[100vh] bg-[#F2F7FD]">
+      <img
+        src="./images/wave Group.png"
+        class="h-full mt-[-80px]"
+        draggable="false"
+        alt="wave"
+      />
+      <div
+        class="absolute w-full h-full top-0 flex justify-center items-center"
+      >
+        <form class="bg-[#4567D6] w-[80%] rounded-xl px-10 py-10">
+          <div class="flex justify-center items-center text-white">
+            <i
+              class="fa-solid fa-user text-xl p-3 bg-black rounded-full ml-[-50px] mr-[20px]"
+            ></i>
+            <h1 class="text-4xl font-bold tracking-wider">Login</h1>
+          </div>
+
+          <input
+            type="email"
+            required
+            class="w-full pl-5 font-bold tracking-widest h-[50px] rounded-lg mt-6"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            required
+            class="w-full pl-5 font-bold tracking-widest h-[50px] rounded-lg mt-6"
+            placeholder="Password"
+          />
+
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="bg-[#22336A] h-[45px] text-white w-[200px] text-xl rounded-lg mt-6"
+            >
+              Masuk
+            </button>
+          </div>
+          <p class="text-center mt-1">
+            Belum Ada Akun? <a href="" class="text-white">Sign Up !</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

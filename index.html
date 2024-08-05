@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="sticky top-0 z-[2] flex items-center px-5 justify-between h-[90px] rounded-bl-2xl rounded-br-2xl bg-white"
+    >
+      <h1 class="text-2xl font-bold tracking-wider">JOB SEEKER</h1>
+
+      <div class="items-center gap-7 hidden lg:flex">
+        <a
+          href=""
+          class="font-[500] tracking-wider whitespace-nowrap border-b-2 border-[#2D9CDB]"
+          >Home</a
+        >
+        <a
+          href=""
+          class="font-[500] hover:border-b border-[#2D9CDB] tracking-wider whitespace-nowrap"
+          >Company Profile</a
+        >
+        <a
+          href=""
+          class="font-[500] hover:border-b border-[#2D9CDB] tracking-wider whitespace-nowrap"
+          >Search Job</a
+        >
+        <a
+          href=""
+          class="font-[500] hover:border-b border-[#2D9CDB] tracking-wider whitespace-nowrap"
+          >My Profile</a
+        >
+      </div>
+
+      <div class="items-center hidden lg:flex">
+        <i
+          class="fa-solid fa-message text-xl text-black px-2 cursor-pointer border-r border-black"
+        ></i>
+
+        <i
+          class="fa-solid fa-bell text-xl px-2 cursor-pointer border-r border-black text-black"
+        ></i>
+
+        <div
+          class="flex items-center ml-4 cursor-pointer pr-2 border-r border-black"
+        >
+          <div class="w-[35px] h-[35px] rounded-[100%] overflow-hidden">
+            <img
+              src="./images/chuuni cover.jpg"
+              class="w-full h-full object-cover"
+              alt="profile"
+            />
+          </div>
+          <p class="font-[600] ml-2 w-[150px] truncate">
+            Muhammad Habib Abdillah
+          </p>
+        </div>
+
+        <button
+          class="bg-[#2D9CDB] text-white ml-4 px-4 py-2 rounded-2xl tracking-wider hover:bg-black transition"
+        >
+          Sebagai Perusahaan
+        </button>
+      </div>
+
+      <!-- RESPONSIVE -->
+      <label
+        for="menuToggle"
+        class="w-[50px] h-[50px] flex flex-col justify-evenly items-start lg:hidden"
+      >
+        <input type="checkbox" id="menuToggle" class="peer hidden" />
+        <div
+          class="bg-black h-[3px] rounded-xl w-full transition transform peer-checked:translate-y-[6px] peer-checked:rotate-[50deg]"
+        ></div>
+        <div
+          class="bg-black h-[3px] rounded-xl w-[80%] peer-checked:hidden transition"
+        ></div>
+        <div
+          class="bg-black h-[3px] rounded-xl w-[50%] peer-checked:w-full transition transfrom peer-checked:translate-y-[-12px] peer-checked:rotate-[-50deg]"
+        ></div>
+
+        <!-- DROP DOWN -->
+        <div
+          class="absolute left-0 h-0 overflow-hidden top-[90px] flex peer-checked:py-5 peer-checked:h-[200px] transition-all gap-3 justify-center bg-white peer-checked:border-t-2 items-center flex-col w-full z-10"
+        >
+          <a
+            href=""
+            class="text-xl font-[600] tracking-wide pb-1 border-[#2D9CDB] border-b-2"
+            >Home</a
+          >
+          <a href="" class="text-xl font-[600] tracking-wide pb-1"
+            >Company Profile</a
+          >
+          <a href="" class="text-xl font-[600] tracking-wide pb-1"
+            >Search Job</a
+          >
+          <a href="" class="text-xl font-[600] tracking-wide pb-1"
+            >My Profile</a
+          >
+        </div>
+      </label>
+      <!-- RESPONSIVE -->
+    </nav>
+
+    <header class="bg-[#F2F7FD] h-[500px] md:h-[100vh]">
+      <img
+        draggable="false"
+        src="./images/wave-tail-resp.png"
+        alt="wavelineres"
+        class="relative top-[-70px] w-full md:hidden"
+      />
+
+      <img
+        draggable="false"
+        src="./images/md-wave-line.png"
+        alt="wavelineres"
+        class="relative top-[-70px] w-full md:block hidden h-full"
+      />
+
+      <div
+        class="absolute z-[1] h-[80vh] top-[90px] w-full flex justify-center"
+      >
+        <div
+          class="w-[90%] flex md:justify-center md:items-center md:gap-[100px]"
+        >
+          <div
+            class="w-full md:flex-[400px] flex flex-col justify-start items-center"
+          >
+            <h1 class="font-bold text-[28px] md:text-[50px] mt-4 w-full">
+              The
+              <div class="relative inline-block">
+                <span class="text-[#7384C5] relative z-[1] pl-1 pr-3"
+                  >Easiest Way</span
+                >
+                <span
+                  class="absolute top-[-10px] left-0 right-0 bottom-0 border-b-[20px] border-[#E3E0FF] z-0"
+                ></span>
+              </div>
+              <br />
+              to Get Your New Job
+            </h1>
+
+            <p class="font-[500] tracking-wide mb-2">
+              Each month more than 3 milion job seekers turn to website in their
+              search for work. making over 140.000 applucations every single day
+            </p>
+
+            <img
+              src="./images/womansit.png"
+              draggable="false"
+              alt="womasit"
+              class="md:hidden"
+            />
+
+            <div class="w-full bg-[#C0D3F1] p-5 mt-5 rounded-xl">
+              <form action="" class="md:flex md:items-center md:gap-4">
+                <div
+                  class="flex bg-white md:flex-1 h-[45px] items-center relative px-2 rounded-xl"
+                >
+                  <label for="spesialisasiinput">
+                    <img src="./images/spesialisasi.png" alt="spesialisasi" />
+                  </label>
+                  <select
+                    type="text"
+                    id="spesialisasiinput"
+                    class="bg-transparent ml-2 h-full focus:outline-none rounded-xl w-full"
+                  >
+                    <option value="">Spesialisasi</option>
+                  </select>
+                  <div
+                    class="bg-white rounded-tr-lg rounded-br-lg px-3 h-full absolute right-1 flex justify-center items-center"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-right transform rotate-[90deg]"
+                    ></i>
+                  </div>
+                </div>
+
+                <div
+                  class="flex mt-7 md:flex-1 md:mt-0 bg-white h-[45px] items-center relative px-2 rounded-xl"
+                >
+                  <label for="lokasiinput">
+                    <img src="./images/target.png" alt="target" />
+                  </label>
+                  <select
+                    type="text"
+                    id="lokasiinput"
+                    class="bg-transparent ml-2 h-full focus:outline-none rounded-xl w-full"
+                  >
+                    <option value="">Pilih Lokasi</option>
+                  </select>
+                  <div
+                    class="bg-white rounded-tr-lg rounded-br-lg px-3 h-full absolute right-1 flex justify-center items-center"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-right transform rotate-[90deg]"
+                    ></i>
+                  </div>
+                </div>
+
+                <button
+                  class="bg-[#3C65FC] w-full mt-7 md:flex-1 md:mt-0 text-white h-[45px] rounded-xl flex justify-between px-5 items-center"
+                >
+                  Search
+                  <i
+                    class="fa-solid fa-magnifying-glass text-black border-l-2 border-black pl-2 text-xl"
+                  ></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="w-[350px] h-[350px] hidden md:block">
+            <img
+              src="./images/womansit.png"
+              alt="womansit2"
+              draggable="false"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <div class="h-[150px]"></div> -->
+
+    <h2
+      class="font-bold text-lg md:text-[50px] leading-tight tracking-wide text-center mt-[120px] text-[#364458]"
+    >
+      Beberapa Perusahaan Yang Mungkin <br />
+      Anda Minati
+    </h2>
+    <p class="text-center">
+      Cari pekerjaan yang cocok dengan kamu, ada lebih dari 800+ perusahaan
+    </p>
+
+    <p class="text-end mr-3 text-[#114FA9] font-bold tracking-wider mt-10">
+      Seluruh Kategori :
+    </p>
+
+    <section class="flex justify-evenly flex-wrap items-center mt-5">
+      <div class="w-[300px] mb-5">
+        <div class="bg-[#E2ECFE] rounded-3xl p-3">
+          <div class="flex justify-between items-center">
+            <div class="bg-white p-2 rounded-xl tracking-wide font-bold">
+              72 Jobs
+            </div>
+            <i
+              class="bg-white p-2 rounded-xl fa-regular fa-bookmark text-black cursor-pointer"
+            ></i>
+          </div>
+
+          <div class="flex justify-between items-center mt-4 mb-3">
+            <div class="w-[160px]">
+              <p class="text-lg text-[#114FA9] block tracking-wider">Google</p>
+              <p class="font-bold text-xl">Pt. Google Indonesia</p>
+            </div>
+
+            <div class="w-[70px] h-[70px]">
+              <img
+                src="./images/google.png"
+                class="w-full h-full object-cover"
+                alt="comapnyProfile"
+              />
+            </div>
+          </div>
+
+          <img
+            src="./images/bintang/bintang4.png"
+            alt="bintangrating"
+            width="100"
+            class="block"
+          />
+          <p class="mt-2">4.0 total rating from 213 reviews</p>
+        </div>
+
+        <div class="flex justify-end">
+          <button
+            class="hover:bg-[#4567D6] border-2 hover:text-white transition mt-4 border-[#4567D6] px-3 py-1 font-bold tracking-wider rounded-xl"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+
+      <div class="w-[300px] mb-5">
+        <div class="bg-[#E2ECFE] rounded-3xl p-3">
+          <div class="flex justify-between items-center">
+            <div class="bg-white p-2 rounded-xl tracking-wide font-bold">
+              72 Jobs
+            </div>
+            <i
+              class="bg-white p-2 rounded-xl fa-regular fa-bookmark text-black cursor-pointer"
+            ></i>
+          </div>
+
+          <div class="flex justify-between items-center mt-4 mb-3">
+            <div class="w-[160px]">
+              <p class="text-lg text-[#114FA9] block tracking-wider">Google</p>
+              <p class="font-bold text-xl">Pt. Google Indonesia</p>
+            </div>
+
+            <div class="w-[70px] h-[70px]">
+              <img
+                src="./images/google.png"
+                class="w-full h-full object-cover"
+                alt="comapnyProfile"
+              />
+            </div>
+          </div>
+
+          <img
+            src="./images/bintang/bintang4.png"
+            alt="bintangrating"
+            width="100"
+            class="block"
+          />
+          <p class="mt-2">4.0 total rating from 213 reviews</p>
+        </div>
+
+        <div class="flex justify-end">
+          <button
+            class="border-2 hover:bg-[#4567D6] hover:text-white transition mt-4 border-[#4567D6] px-3 py-1 font-bold tracking-wider rounded-xl"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+
+      <div class="w-[300px] mb-5">
+        <div class="bg-[#E2ECFE] rounded-3xl p-3">
+          <div class="flex justify-between items-center">
+            <div class="bg-white p-2 rounded-xl tracking-wide font-bold">
+              72 Jobs
+            </div>
+            <i
+              class="bg-white p-2 rounded-xl fa-regular fa-bookmark text-black cursor-pointer"
+            ></i>
+          </div>
+
+          <div class="flex justify-between items-center mt-4 mb-3">
+            <div class="w-[160px]">
+              <p class="text-lg text-[#114FA9] block tracking-wider">Google</p>
+              <p class="font-bold text-xl">Pt. Google Indonesia</p>
+            </div>
+
+            <div class="w-[70px] h-[70px]">
+              <img
+                src="./images/google.png"
+                class="w-full h-full object-cover"
+                alt="comapnyProfile"
+              />
+            </div>
+          </div>
+
+          <img
+            src="./images/bintang/bintang4.png"
+            alt="bintangrating"
+            width="100"
+            class="block"
+          />
+          <p class="mt-2">4.0 total rating from 213 reviews</p>
+        </div>
+
+        <div class="flex justify-end">
+          <button
+            class="border-2 hover:bg-[#4567D6] hover:text-white transition mt-4 border-[#4567D6] px-3 py-1 font-bold tracking-wider rounded-xl"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <h2
+      class="text-[#364458] text-2xl md:text-[50px] leading-tight font-bold tracking-wider text-center mt-10"
+    >
+      Pilih Kategori Kamu
+    </h2>
+    <p class="text-center text-[#364458]">
+      Cari pekerjaan yang cocok dengan kamu, ada lebih dari 800+ perusahaan
+    </p>
+
+    <section class="flex items-center justify-center gap-3 mt-7 px-5 flex-wrap">
+      <div
+        class="bg-[#E2ECFE] flex-[260px] flex items-center flex-col py-3 rounded-xl"
+      >
+        <img src="./images/komputerp.png" alt="kategori" width="80" />
+        <p class="text-xl font-bold tracking-wider">Programmer</p>
+      </div>
+
+      <div
+        class="bg-[#E2ECFE] flex-[260px] flex items-center flex-col py-3 rounded-xl"
+      >
+        <img src="./images/komputerp.png" alt="kategori" width="80" />
+        <p class="text-xl font-bold tracking-wider">Programmer</p>
+      </div>
+
+      <div
+        class="bg-[#E2ECFE] flex-[260px] flex items-center flex-col py-3 rounded-xl"
+      >
+        <img src="./images/komputerp.png" alt="kategori" width="80" />
+        <p class="text-xl font-bold tracking-wider">Programmer</p>
+      </div>
+    </section>
+
+    <footer class="bg-[#22336A] mt-[50px] pt-[50px]">
+      <p class="font-bold text-2xl tracking-wider text-white text-center">
+        Overcome Ignorance and <br />
+        Fight for Equality
+      </p>
+
+      <div class="flex justify-center items-center mt-5 gap-2">
+        <button
+          class="border-2 border-white p-2 w-[170px] hover:bg-white hover:text-black transition text-lg text-white"
+        >
+          Tombol 1
+        </button>
+
+        <button
+          class="bg-white border-2 border-white p-2 w-[170px] hover:bg-transparent hover:text-white transition text-lg text-[#22336A]"
+        >
+          Tombol 2
+        </button>
+      </div>
+
+      <div class="flex justify-center items-center mt-7 w-[100%] px-10 mb-10">
+        <div class="w-[90%] flex justify-center items-center flex-wrap gap-4">
+          <div class="text-white text-center md:text-start flex-[200px]">
+            <p class="font-bold tracking-wider mb-3">Navigation</p>
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >Home</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >About Us</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >What We Do</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >The Power Of 10</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >Donate</a
+            >
+          </div>
+
+          <div class="text-white text-center md:text-start flex-[200px]">
+            <p class="font-bold tracking-wider mb-3">Navigation</p>
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >Home</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >About Us</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >What We Do</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >The Power Of 10</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >Donate</a
+            >
+          </div>
+
+          <div class="text-white text-center md:text-start flex-[200px]">
+            <p class="font-bold tracking-wider mb-3">Navigation</p>
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >Home</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >About Us</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >What We Do</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >The Power Of 10</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >Donate</a
+            >
+          </div>
+          <div class="text-white text-center md:text-start flex-[200px]">
+            <p class="font-bold tracking-wider mb-3">Navigation</p>
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >Home</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >About Us</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >What We Do</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >The Power Of 10</a
+            >
+            <a class="block hover:border-b-2 border-black transition" href=""
+              >Donate</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between flex-wrap items-center px-10 pb-5">
+        <p class="text-2xl text-white font-bold tracking-wider mb-3">
+          JOB SEEKER
+        </p>
+        <p class="text-[gray] mb-3">© 2019 APCOM. All Ri</p>
+
+        <div>
+          <i
+            class="fa-brands fa-facebook-f cursor-pointer text-white p-2 rounded-full border"
+          ></i>
+
+          <i
+            class="fa-brands fa-linkedin-in cursor-pointer mx-2 text-white p-2 rounded-full border"
+          ></i>
+
+          <i
+            class="fa-brands fa-twitter cursor-pointer text-white p-2 rounded-full border"
+          ></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- font-family: Helvetica, Arial, sans-serif; -->
